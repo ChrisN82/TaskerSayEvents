@@ -23,7 +23,7 @@
 				<var>%priority</var>
 			</Int>
 			<Str sr="arg2" ve="3">%TIMES</Str>
-			<Str sr="arg3" ve="3">hhmm</Str>
+			<Str sr="arg3" ve="3">HHmm</Str>
 			<Str sr="arg4" ve="3">%Currenttime</Str>
 			<Int sr="arg5" val="0"/>
 		</Action>
