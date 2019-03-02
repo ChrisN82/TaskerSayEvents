@@ -1,0 +1,82 @@
+<TaskerData sr="" dvi="1" tv="5.6">
+	<Task sr="task8">
+		<cdate>1551029274210</cdate>
+		<edate>1551516674811</edate>
+		<id>8</id>
+		<nme>Say Calendar Events</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">Er zijn geen afspraken voor vandaag.</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:nl-nl</Str>
+			<Int sr="arg2" val="4"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="4"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Events(#)</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">Er staat 1 afspraak voor vandaag</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:nl-nl</Str>
+			<Int sr="arg2" val="4"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="4"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Events(#)</lhs>
+					<op>0</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">Er staan %Events(#) afspraken voor vandaag.</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:nl-nl</Str>
+			<Int sr="arg2" val="4"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="4"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%Events(#)</lhs>
+					<op>7</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>39</code>
+			<Str sr="arg0" ve="3">%eventtosay</Str>
+			<Str sr="arg1" ve="3">%Events(:)</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">%eventtosay</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:nl-nl</Str>
+			<Int sr="arg2" val="4"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="4"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>40</code>
+		</Action>
+	</Task>
+</TaskerData>
